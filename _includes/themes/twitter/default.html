@@ -15,6 +15,10 @@
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    <script src="/assets/javascripts/jquery-1.7.2.min.js"></script>
+    <script src="/assets/javascripts/back-to-top.js"></script>
+    <script src="/assets/javascripts/search.js"></script>
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -26,8 +30,8 @@
 
   <body>
     <div class="searchbar box-shadow">
-      <div class="search-btn">SEARCH</div>
-      <div class="search-text"><input type="text" placeHolder="Search..." /></div>
+      <div class="search-btn"><a href="" target="_blank" id="search-btn">SEARCH</a></div>
+      <div class="search-text"><input id="search-text" type="text" placeHolder="Search..." /></div>
       <div class="clear"> </div>
     </div>
 
@@ -36,9 +40,6 @@
         <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
       </div>
       <ul>
-        <!--{% assign pages_list = site.pages %}-->
-        <!--{% assign group = 'navigation' %}-->
-        <!--{% include JB/pages_list %}-->
         <li><a href="/index.html"><h3>首页</h3><p>Home</p></a></li>
         <li><a href="/categories.html"><h3>分类</h3><p>Categories</p></a></li>
         <li><a href="/tags.html"><h3>标签</h3><p>Tags</p></a></li>
@@ -60,6 +61,9 @@
         </p>
       </footer>
     </div> <!-- /container -->
+
+    <!-- back to top div -->
+    <div id="toTop" class="back-to-top">^ Back to Top</div>
 
     {% include JB/analytics %}
   </body>
