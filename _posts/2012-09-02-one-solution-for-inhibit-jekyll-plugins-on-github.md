@@ -44,4 +44,4 @@ sleep了，具体原因我没有深究（我的jekyll版本为0.11.2）。因此
 
 
 
-转载请注明出处：[www.王文波.cn](www.王文波.cn/2012/08/30/first-post---github)
+转载请注明出处：[www.王文波.cn](http://www.王文波.cn/jekyll/2012/09/02/one-solution-for-inhibit-jekyll-plugins-on-github)

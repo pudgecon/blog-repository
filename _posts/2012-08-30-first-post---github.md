@@ -88,4 +88,4 @@ DNS设置好后，需要一点时间才能生效，但是不用万网说的48小
 
 
 
-转载请注明出处：[www.王文波.cn](www.王文波.cn/2012/08/30/first-post---github)
+转载请注明出处：[www.王文波.cn](http://www.王文波.cn/others/2012/08/30/first-post---github)
