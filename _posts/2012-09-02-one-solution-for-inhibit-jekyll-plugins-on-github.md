@@ -4,7 +4,7 @@ title: "关于github禁止使用jekyll插件的一个解决方案"
 description: "one solution for inhibit jekyll plugins on github.
 关于github禁止使用jekyll插件的一个解决方案"
 category: 'jekyll'
-tags: ['jekyll-plugins']
+tags: ['jekyll', 'jekyll-plugins']
 ---
 {% include JB/setup %}
 
