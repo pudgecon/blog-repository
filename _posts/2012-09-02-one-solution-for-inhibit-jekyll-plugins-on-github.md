@@ -27,21 +27,26 @@ LTS。并没有`.bash_profile`文件。因此我们需要的是在`.bashrc`文�
 
 原文采用
 
+{% highlight bash %}
     alias build_blog="cd ~/applications/charliepark.github.com.raw;jekyll;cp -r ~/applications/charliepark.github.com.raw/_site/* ~/applications/charliepark.github.com;cd ~/applications/charliepark.github.com;git add .;git commit -am 'Latest build.';git push"
+
     alias bb="build_blog"
+{% endhighlight %}
 
 但是当执行到jekyll命令的时候，终端是不会往下执行，因为貌似jekyll
 sleep了，具体原因我没有深究（我的jekyll版本为0.11.2）。因此我们需要将脚本稍作修改。
 
-    alias build_blog="cp -r ~/workspace/pudgecon.github.com/_site/* ~/workspace/www.wangwenbo.cn;cd ~/workspace/www.wangwenbo.cn;git add .;git commit -m "Latest build";git push origin master"
+{% highlight bash %}
+    alias build_blog="cp -r ~/workspace/pudgecon.github.com/_site/* ~/workspace/www.wangwenbo.cn;cd ~/workspace/www.wangwenbo.cn;git add .;git commit -m 'Latest build';git push origin master"
+
     alias bb="build_blog"
+{% endhighlight %}
 
 去掉进去项目文件夹执行jekyll命令的步骤，因为当我们编写博文的时候，jekyll已经会为我们重新生成文件了，因此个人觉得这步可以省略了。当然不放心的时候可以重新生成一次。
 
 之前采用`git`的`submodule`方法试过，但是jekyll生成_site之前，将_site里面的全部内容删除了，因此每次都没成功，也可以我之前的方法出错了，因为我对submodule也没完全清楚。呵呵。
 
 日后成功了再分享。
-
 
 
 转载请注明出处：[www.王文波.cn](http://www.王文波.cn/jekyll/2012/09/02/one-solution-for-inhibit-jekyll-plugins-on-github)
