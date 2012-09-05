@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Pudgecon
-tagline: Site Tagline
+tagline: 王文波的博客
 author :
   name : 王文波
   email : pudgecon@gmail.com
@@ -100,7 +100,7 @@ JB :
   analytics :
     provider : google
     google : 
-        tracking_id : 'UA-34545258-1'
+        tracking_id : UA-34545258-1
     #getclicky :
       #site_id : 
     #mixpanel :
